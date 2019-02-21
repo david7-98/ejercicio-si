@@ -1,13 +1,32 @@
-//Holi
+void LeerStruct (Alumno &a) {
+
+	int num;
+	
+	do {
+		cout << ¿Cuántos alumnos desea? 
+		cin >> num;
+	} while (num < 0);
+
+	for (int i = 1; i <= num; i++) {
+		cout << "Alumno: " << i << endl;
+		cout << "Nombre: ";
+		cin >> a.nombre;
+		cout << "Edad: ";
+		cin >> a.edad;
+	}
+}
+
 
 /**
 
 * @brief Mateo eres malisimo jugando al Apex
+* @param ya ves loco
+
 
 */
 
 
-void algoritmoDeOrdenacion (Alumno array[], int util_array){
+void algoritmoDeOrdenacion (Alumno &array[], int util_array){
 
 	int aux = 0;
 
@@ -27,3 +46,8 @@ void algoritmoDeOrdenacion (Alumno array[], int util_array){
 	}
 
 }
+
+void imprimeAlumno(const Alumno &alu){
+	cout << alu.nombre << " " << alu.edad << endl;
+}
+
