@@ -1,5 +1,6 @@
 //Holi
 
+
 /**
 
 * @brief Mateo eres malisimo jugando al Apex
@@ -9,7 +10,7 @@
 */
 
 
-void algoritmoDeOrdenacion (Alumno array[], int util_array){
+void algoritmoDeOrdenacion (Alumno &array[], int util_array){
 
 	int aux = 0;
 
@@ -29,3 +30,8 @@ void algoritmoDeOrdenacion (Alumno array[], int util_array){
 	}
 
 }
+
+void imprimeAlumno(const Alumno &alu){
+	cout << alu.nombre << " " << alu.edad << endl;
+}
+
