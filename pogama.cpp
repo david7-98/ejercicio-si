@@ -1,4 +1,4 @@
-void LeerStruct (Alumno &a) {
+void LeerStruct (Alumno &a[], int util) {
 
 	int num;
 	
